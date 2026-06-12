@@ -1,0 +1,2 @@
+print("Dhann Sri Akaal Purakh Waheguru Ji\nDhann Sri Guru Nanak Dev Ji\nDhann Das Patshayiyan\nDhann Ohna di Jagdi Jot Sri Guru Granth Sahib Ji\nDhann Sri Guru Dasam Granth Sahib Ji\nDhann Sri  Guru Sarabloh Granth Ji\nDhann Guru Khalsa Panth Ji")
+            
