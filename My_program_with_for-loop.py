@@ -16,9 +16,10 @@
 #     print("Waheguru")#2000 vari Waheguru print hou
 # for k in range(1,2001):
 #     print(k)# 1 to 2000 takk ginti print hou
-for i in range(100,-1,-1):#100 to lai ke 1 takk reverse takk print hou.  
+# for i in range(100,-1,-1):#100 to lai ke 1 takk reverse takk print hou.  
+#     print(i)
+for i in range(2,21,2):
     print(i)
-
 
 
 
