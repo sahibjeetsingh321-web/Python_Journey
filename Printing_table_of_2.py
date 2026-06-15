@@ -9,6 +9,6 @@
 # for i in range(1,11):
 #     print(f"Two into {i} is {2*i}")
 words=["zero","one","two","three","four","five","six","seven","eight","nine","ten"]
-for k in range(1,11):
+for k in range(0,11):
     print(f"Two {words[k]}'s the {2*k}")
     

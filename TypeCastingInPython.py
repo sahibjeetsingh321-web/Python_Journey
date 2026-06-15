@@ -10,5 +10,5 @@ d = 8
 print(
     c + d
 )  # answer will converted to float automatically because d will converted into float during operation
-print(type(c + d))
+print(type(c + d))#float
 print(type(d))  # It remains as integer but during operaion it is treated as float

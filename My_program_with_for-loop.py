@@ -1,4 +1,4 @@
-# name = "Sahib"
+name = "Sahib"
 # for i in name:
 #     print(i)
 # for i in name:

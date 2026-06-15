@@ -54,10 +54,10 @@ str1 = "hello world" #single quotes vi string layi use kar saakde aa par dujia l
 print(str1.islower())# True
 
 str1="  " # using spacebar
-print(str1.isspace())
+print(str1.isspace())#True
 
 str1 = "        " #using tab key
-print(str1.isspace())
+print(str1.isspace())#True
 
 str1 ="World Health Organization"
 print(str1.istitle()) # Jekar harek akhar da pehla akhar wadda ta true show karu, else false.
