@@ -22,3 +22,22 @@ while True:
     if(i>=0):
         break
 
+#do-while loop syntax in Python:
+# while True:
+#     block of code
+#     increment or decrement
+#     if-condition
+#     break
+# jekar apa while loop de andar break statement chala diye ta kade vi else block wala part ahi challda. else block odo challda jado loop naturally end hundi hai.
+# kise vi loop statement ch increment ya decrement karna sab to zaruri hai nahi ta program ch error aunda hai.
+#Revision sheet:
+#jekar loop infinite ban gy hai ta heck karo ki increment ya decrement kita si kyunki je variable di value hi nahi change hou te condition true hi rahu ta loop infinite ban ju.
+# break statement: poore de poore loop de block to bahar lai jandi hai.
+i=0
+while(i<=3):
+    print(i)
+    i=i+1
+    if(i==2):
+        break
+else:
+    print("else wali statement print nahi hui???")#else wali statement print nahi hoyi si bhavein ki of while di identation to bahar si.
