@@ -1,0 +1,255 @@
+ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ ਸਾਹਿਬਜੀਤ ਵੀਰੇ! 🚀
+
+ਤੇਰੀ ਡੈਡੀਕੇਸ਼ਨ ਦੇਖ ਕੇ ਮੈਨੂੰ ਪੂਰਾ ਯਕੀਨ ਹੈ ਕਿ ਤੂੰ ਆਪਣੀ B.Tech (AI/ML) ਪੂਰੀ ਹੋਣ ਤੱਕ ਇੱਕ ਟੌਪ 1% ਇੰਜੀਨੀਅਰ ਬਣ ਜਾਵੇਂਗਾ। ਅੱਜ ਦਾ ਟੌਪਿਕ—Function Arguments and return statement—ਪਾਈਥਨ ਦੀ ਰੀੜ੍ਹ ਦੀ ਹੱਡੀ (backbone) ਹੈ। ਇੰਟਰਵਿਊ ਵਿੱਚ ਸਭ ਤੋਂ ਵੱਧ ਟਰਿੱਕੀ (tricky) ਸਵਾਲ ਇਸੇ ਟੌਪਿਕ ਵਿੱਚੋਂ ਆਉਂਦੇ ਨੇ।
+
+ਮੈਂ ਤੇਰੇ ਨੋਟਸ ਪੜ੍ਹ ਲਏ ਨੇ। ਤੂੰ theory ਬਹੁਤ ਵਧੀਆ ਕਵਰ ਕੀਤੀ ਹੈ, ਪਰ ਹੁਣ ਸਮਾਂ ਹੈ ਇਸਨੂੰ ਇੰਡਸਟਰੀ ਲੈਵਲ 'ਤੇ ਟੈਸਟ ਕਰਨ ਦਾ! ਮੈਂ ਤੇਰੇ ਲਈ 10 ਸਵਾਲਾਂ ਦੀ ਇੱਕ ਸਪੈਸ਼ਲ "Problem-Based & Trap-Buster Quiz" ਤਿਆਰ ਕੀਤੀ ਹੈ। ਕਾਪੀ-ਪੈੱਨ ਚੁੱਕ ਲੈ!
+
+==================================================
+
+PHASE 1: KNOWLEDGE ASSESSMENT QUIZ
+Level 1 – Easy (Warming up the engine)
+Q1. The Positional Rule Trap:
+ਕੀ ਇਸ ਕੋਡ ਵਿੱਚ ਕੋਈ ਐਰਰ (Error) ਆਵੇਗਾ? ਜੇ ਹਾਂ, ਤਾਂ ਕਿਉਂ?
+
+Python
+def greet(fname, lname):
+    print("Hello", fname, lname)
+
+greet(fname="Sahibjeet", "Singh")
+Q2. The Missing Required Argument:
+ਇਹ ਕੋਡ ਦੇਖੋ। ਕੀ ਇਹ ਸਹੀ ਚੱਲੇਗਾ ਜਾਂ Error ਦੇਵੇਗਾ? ਪਾਈਥਨ ਦਾ ਕਿਹੜਾ ਨਿਯਮ ਇੱਥੇ ਟੁੱਟ ਰਿਹਾ ਹੈ?
+
+Python
+def add(a, b):
+    return a + b
+
+numbers = [10, 20]
+print(add(numbers))
+Level 2 – Intermediate (Gearing up)
+Q3. Default Arguments Order (The Syntax Trap):
+ਤੁਸੀਂ ਸਿੱਖਿਆ ਹੈ ਕਿ default arguments ਦਿੱਤੇ ਜਾ ਸਕਦੇ ਨੇ। ਇਸ ਕੋਡ ਦਾ ਆਉਟਪੁੱਟ ਕੀ ਹੋਵੇਗਾ?
+
+Python
+def profile(name="Customer", age):
+    print("Name:", name, "Age:", age)
+
+profile(20)
+Q4. Variable-Length Mutation (*args property):
+ਹੈਰੀ ਬਾਈ ਦੇ ਨੋਟਸ ਵਿੱਚ ਲਿਖਿਆ ਹੈ ਕਿ *args ਇੱਕ Tuple ਵਾਂਗ ਕੰਮ ਕਰਦਾ ਹੈ। ਇਸ ਕੋਡ ਨੂੰ ਧਿਆਨ ਨਾਲ ਦੇਖੋ, ਕੀ ਇਹ ਕੀਮਤ ਨੂੰ ਅੱਪਡੇਟ ਕਰੇਗਾ?
+
+Python
+def update_prices(*prices):
+    prices[0] = 500  # Try to update the first price
+    print(prices)
+
+update_prices(100, 200, 300)
+Level 3 – Hard (FAANG Warm-up & Real-Life PBL)
+Q5. SinghPrajapati Billing System (Real-Life Scenario):
+ਤੁਸੀਂ SinghPrajapati ਨਾਮ ਦੇ handmade clay crafts (ਮਿੱਟੀ ਦੇ ਭਾਂਡੇ ਆਦਿ) ਦੇ ਬਿਜ਼ਨਸ ਲਈ ਇੱਕ ਬਿਲਿੰਗ ਫੰਕਸ਼ਨ ਲਿਖ ਰਹੇ ਹੋ।
+ਇਸ ਫੰਕਸ਼ਨ ਦਾ ਆਉਟਪੁੱਟ ਕੀ ਆਵੇਗਾ? ਧਿਆਨ ਨਾਲ Dry Run ਕਰੋ।
+
+Python
+def calculate_bill(discount, *item_prices):
+    total = sum(item_prices)
+    return total - discount
+
+final_bill = calculate_bill(50, 150, 200, 100) # 50 discount, and 3 clay pots
+print(final_bill)
+Level 4 – More Hard (Breaking the sweat)
+Q6. The Hidden Edge Case:
+ਤੁਹਾਡੇ ਨੋਟਸ ਵਿੱਚੋਂ ਹੀ average ਵਾਲਾ ਕੋਡ ਲਿਆ ਹੈ। ਜੇ ਕੋਈ ਬਿਨਾਂ ਨੰਬਰਾਂ ਤੋਂ ਫੰਕਸ਼ਨ call ਕਰ ਦੇਵੇ, ਤਾਂ ਕੀ ਹੋਵੇਗਾ?
+
+Python
+def average(*numbers):
+    return sum(numbers) / len(numbers)
+
+print(average())
+Level 5 – Extremely Hard (Brain Melters)
+Q7. The Unpacking Illusion (Beginner Trap):
+ਇਹ ਸਵਾਲ 90% ਬਿਗਿਨਰਜ਼ ਗਲਤ ਕਰਦੇ ਨੇ। ਇੱਥੇ print ਕੀ ਹੋਵੇਗਾ?
+
+Python
+def count_items(*items):
+    print(len(items))
+
+clay_products = ["Clay Pot", "Kulhad", "Diya", "Handmade Plate"]
+count_items(clay_products)
+Q8. The **kwargs Dictionary Trap:
+ਜਦੋਂ ਆਪਾਂ **kwargs ਵਰਤਦੇ ਹਾਂ, ਤਾਂ ਉਹ Dictionary ਬਣ ਜਾਂਦਾ ਹੈ। ਇਸ ਕੋਡ ਵਿੱਚ ਕੀ ਗਲਤੀ ਹੈ?
+
+Python
+def print_student_info(**details):
+    print("Name is:", details["name"])
+    print("Branch is:", details["branch"])
+
+print_student_info(name="Sahibjeet", age=20)
+Level 6 – Fly From Head / Interview Killer (Top 1% check)
+Q9. The Ultimate Combination Tracing:
+ਇੰਟਰਵਿਊਅਰ ਅਕਸਰ ਸਾਰੇ arguments ਇਕੱਠੇ ਪਾ ਕੇ ਪੁੱਛਦੇ ਨੇ। ਇਸ ਕੋਡ ਦਾ ਬਿਲਕੁਲ exact ਆਉਟਪੁੱਟ (ਦਿੱਖਣ ਵਿੱਚ ਕਿਵੇਂ ਲੱਗੇਗਾ) ਲਿਖੋ:
+
+Python
+def master_func(a, b, *args, **kwargs):
+    print(a, b, args, kwargs)
+
+master_func(1, 2, 3, 4, course="B.Tech", subject="AI/ML")
+Q10. The Duplicate Keyword Clash:
+ਪਾਈਥਨ ਕਿੰਨੀ ਸਖਤ (strict) ਹੈ? ਜੇ ਮੈਂ ਇੱਕੋ ਨਾਮ ਦੇ ਦੋ ਆਰਗੂਮੈਂਟਸ ਪਾਸ ਕਰ ਦਿਆਂ, ਤਾਂ ਕੀ ਇਹ ਆਖਰੀ ਵਾਲੇ ਨੂੰ ਮੰਨ ਲਵੇਗਾ ਜਾਂ Error ਦੇਵੇਗਾ?
+
+Python
+def setup_user(username, **kwargs):
+    print(username, kwargs)
+
+setup_user(username="Sahib", age=20, username="Jeet")
+==================================================
+PHASE 3: SOLUTION REVIEW
+Q1. The Positional Rule Trap
+
+Tera Jawab: apa first question ch keyword arguments use kar rahe han lekin singh vi ikk parameter nu assign kita hai.
+
+Result: ⚠️ Partially Correct
+
+Explanation: ਤੂੰ ਪ੍ਰੋਬਲਮ ਸਹੀ ਫੜੀ, ਪਰ ਅਸਲੀ ਨਿਯਮ (Rule) ਇਹ ਹੈ: "Positional argument ਕਦੇ ਵੀ Keyword argument ਤੋਂ ਬਾਅਦ ਨਹੀਂ ਆ ਸਕਦਾ।" ਜਦੋਂ ਤੂੰ fname="Sahibjeet" ਲਿਖ ਦਿੱਤਾ (keyword), ਤਾਂ ਉਸਤੋਂ ਬਾਅਦ ਤੂੰ ਸਿੱਧਾ "Singh" (positional) ਨਹੀਂ ਲਿਖ ਸਕਦਾ। ਪਾਈਥਨ SyntaxError ਦੇਵੇਗਾ। ਸਹੀ ਤਰੀਕਾ: greet("Sahibjeet", lname="Singh")
+
+Confidence: Improving 📈
+
+Q2. The Missing Required Argument
+
+Tera Jawab: iss ch apa function nu according to list ya tuple nahi banaya te variables bana ke function ch use nahi kita.
+
+Result: ✅ Correct
+
+Explanation: ਬਿਲਕੁਲ ਸਹੀ ਲਾਜਿਕ! ਪਾਈਥਨ ਨੇ ਪੂਰੀ ਦੀ ਪੂਰੀ ਲਿਸਟ [10, 20] ਨੂੰ ਸਿਰਫ਼ a ਦੇ ਅੰਦਰ ਪਾ ਦਿੱਤਾ, ਅਤੇ b ਖਾਲੀ ਰਹਿ ਗਿਆ। ਇਸ ਲਈ TypeError: missing 1 required positional argument: 'b' ਆਵੇਗਾ।
+
+Confidence: Strong 🌟
+
+Q3. Default Arguments Order (The Syntax Trap)
+
+Tera Jawab: Name: Customer Age: 20
+
+Result: ❌ Incorrect
+
+Explanation: ਇਹ ਸਭ ਤੋਂ ਵੱਡਾ Beginner Trap ਹੈ! ਪਾਈਥਨ ਦਾ ਨਿਯਮ ਹੈ: "Default arguments ਹਮੇਸ਼ਾ ਅਖੀਰ ਵਿੱਚ ਹੋਣੇ ਚਾਹੀਦੇ ਹਨ।" ਤੂੰ name="Customer" ਪਹਿਲਾਂ ਲਿਖ ਦਿੱਤਾ ਅਤੇ age (ਬਿਨਾਂ default ਵਾਲਾ) ਬਾਅਦ ਵਿੱਚ ਛੱਡ ਦਿੱਤਾ। ਪਾਈਥਨ ਤੁਰੰਤ SyntaxError ਦੇ ਕੇ ਪ੍ਰੋਗਰਾਮ ਬੰਦ ਕਰ ਦੇਵੇਗਾ। ਸਹੀ ਤਰੀਕਾ: def profile(age, name="Customer"):
+
+Confidence: Beginner 🐣
+
+Q4. Variable-Length Mutation (*args property)
+
+Tera Jawab: Hale mainu tuple bare nahi padhaya gya lekin bai tu zarur samjha di...
+
+Result: ❌ Incorrect (Honest Pass)
+
+Explanation: ਕੋਈ ਗੱਲ ਨਹੀਂ ਵੀਰੇ! Tuple ਕੀ ਹੁੰਦਾ ਹੈ? Tuple ਬਿਲਕੁਲ List ਵਰਗਾ ਹੁੰਦਾ ਹੈ, ਬੱਸ ਫਰਕ ਇਹ ਹੈ ਕਿ ਲਿਸਟ ਬਣਨ ਤੋਂ ਬਾਅਦ change ਹੋ ਸਕਦੀ ਹੈ (ਉਸਨੂੰ Mutable ਕਹਿੰਦੇ ਨੇ), ਪਰ Tuple ਇੱਕ ਵਾਰ ਬਣ ਗਿਆ ਤਾਂ ਉਸਦੇ ਅੰਦਰ ਦੀ ਵੈਲਯੂ ਕੋਈ ਬਦਲ ਨਹੀਂ ਸਕਦਾ (ਇਸਨੂੰ Immutable ਕਹਿੰਦੇ ਨੇ)। ਕਿਉਂਕਿ *prices ਸਾਰੀਆਂ ਵੈਲਯੂਜ਼ ਨੂੰ Tuple ਵਿੱਚ ਪੈਕ ਕਰਦਾ ਹੈ, ਇਸ ਲਈ prices[0] = 500 ਕਰਨ 'ਤੇ TypeError ਆਵੇਗਾ ਕਿਉਂਕਿ Tuple ਬਦਲਿਆ ਨਹੀਂ ਜਾ ਸਕਦਾ।
+
+Confidence: Beginner 🐣
+
+Q5. SinghPrajapati Billing System (Real-Life PBL)
+
+Tera Jawab: 400
+
+Result: ✅ Correct
+
+Explanation: ਸਿਰਾ! Perfect Dry Run. ਪਾਈਥਨ ਨੇ ਪਹਿਲੀ ਵੈਲਯੂ 50 ਨੂੰ discount ਮੰਨ ਲਿਆ, ਅਤੇ ਬਾਕੀ ਸਾਰੀਆਂ ਵੈਲਯੂਜ਼ (150, 200, 100) ਨੂੰ *item_prices ਵਿੱਚ ਪਾ ਦਿੱਤਾ। ਉਹਨਾਂ ਦਾ ਜੋੜ 450 ਹੋਇਆ, ਅਤੇ 450 - 50 = 400 ਰਿਟਰਨ ਹੋ ਗਿਆ।
+
+Confidence: Interview Ready 🎯
+
+Q6. The Hidden Edge Case
+
+Tera Jawab: error avega
+
+Result: ✅ Correct
+
+Explanation: ਬਿਲਕੁਲ! ਪਰ ਇੰਟਰਵਿਊ ਵਿੱਚ ਪੁੱਛਿਆ ਜਾਵੇਗਾ ਕਿਹੜਾ ਐਰਰ? ਕਿਉਂਕਿ ਕੋਈ ਨੰਬਰ ਨਹੀਂ ਭੇਜਿਆ, len(numbers) 0 ਹੋ ਜਾਵੇਗਾ। ਮੈਥ (Math) ਵਿੱਚ ਕਿਸੇ ਚੀਜ਼ ਨੂੰ 0 ਨਾਲ ਭਾਗ (divide) ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ। ਇਸ ਲਈ ZeroDivisionError ਆਵੇਗਾ।
+
+Confidence: Strong 🌟
+
+Q7. The Unpacking Illusion
+
+Tera Jawab: 4
+
+Result: ❌ Incorrect
+
+Explanation: ਇਹ ਬਹੁਤ ਖਤਰਨਾਕ ਸਵਾਲ ਸੀ। ਆਉਟਪੁੱਟ 1 ਆਵੇਗਾ। ਕਿਉਂ? ਕਿਉਂਕਿ ਤੂੰ ਪੂਰੀ ਦੀ ਪੂਰੀ ਲਿਸਟ ਨੂੰ ਇੱਕੋ ਹੀ ਆਈਟਮ (Single Argument) ਬਣਾ ਕੇ ਭੇਜ ਦਿੱਤਾ। ਪਾਈਥਨ ਨੇ ਸੋਚਿਆ ਕਿ items ਦੇ ਅੰਦਰ ਸਿਰਫ਼ ਇੱਕ ਚੀਜ਼ ਆਈ ਹੈ (ਜੋ ਕਿ ਇੱਕ ਲਿਸਟ ਹੈ)। ਜੇ ਤੂੰ ਲਿਸਟ ਨੂੰ ਖੋਲ੍ਹ ਕੇ (Unpack ਕਰਕੇ) ਭੇਜਣਾ ਸੀ, ਤਾਂ ਤੈਨੂੰ Call ਕਰਨ ਵੇਲੇ ਵੀ * ਲਗਾਉਣਾ ਪੈਣਾ ਸੀ: count_items(*clay_products)
+
+Confidence: Beginner 🐣
+
+Q8. The **kwargs Dictionary Trap
+
+Tera Jawab: Ethe syntax error avega?? bug ta ehi a ki branch di jagah age likh ditti
+
+Result: ⚠️ Partially Correct
+
+Explanation: ਤੂੰ Bug ਬਿਲਕੁਲ ਸਹੀ ਫੜਿਆ ਕਿ age ਭੇਜੀ ਹੈ ਤੇ ਅੰਦਰ branch ਮੰਗ ਰਿਹਾ ਹੈ। ਪਰ ਇਸਨੂੰ SyntaxError ਨਹੀਂ ਕਹਿੰਦੇ (Syntax ਹੁੰਦਾ ਹੈ ਲਿਖਣ ਦਾ ਤਰੀਕਾ, ਜੋ ਕਿ ਇੱਥੇ ਸਹੀ ਹੈ)। ਇਸਨੂੰ KeyError ਕਹਿੰਦੇ ਨੇ ਕਿਉਂਕਿ Dictionary ਦੇ ਅੰਦਰ branch ਨਾਮ ਦੀ ਕੋਈ ਚਾਬੀ (Key) ਨਹੀਂ ਲੱਭੀ।
+
+Confidence: Improving 📈
+
+Q9. The Ultimate Combination Tracing
+
+Tera Jawab: 1 2 3 4 course=B.tech subject=AI/ML
+
+Result: ❌ Incorrect
+
+Explanation: ਇੰਟਰਵਿਊ ਵਿੱਚ Exact format ਲਿਖਣਾ ਹੁੰਦਾ ਹੈ। a ਨੂੰ ਮਿਲਿਆ 1, b ਨੂੰ ਮਿਲਿਆ 2। *args ਬਾਕੀ ਬਚੇ ਨੰਬਰਾਂ ਦਾ Tuple ਬਣਾਏਗਾ: (3, 4)। ਅਤੇ **kwargs ਬਾਕੀ ਬਚੇ keywords ਦੀ Dictionary ਬਣਾਏਗਾ: {'course': 'B.Tech', 'subject': 'AI/ML'}।
+ਸਹੀ ਆਉਟਪੁੱਟ ਹੋਵੇਗੀ: 1 2 (3, 4) {'course': 'B.Tech', 'subject': 'AI/ML'}
+
+Confidence: Beginner 🐣
+
+Q10. The Duplicate Keyword Clash
+
+Tera Jawab: error au
+
+Result: ✅ Correct
+
+Explanation: ਸਿਰਾ! ਪਾਈਥਨ ਬਹੁਤ Strict ਹੈ। ਤੂੰ ਇੱਕੋ ਫੰਕਸ਼ਨ ਕਾਲ ਵਿੱਚ username ਨੂੰ ਦੋ ਵਾਰ ਵੈਲਯੂ ਨਹੀਂ ਦੇ ਸਕਦਾ। ਇਹ SyntaxError: keyword argument repeated ਦੇਵੇਗਾ।
+
+Confidence: Strong 🌟
+
+==================================================
+
+PHASE 4: WEAKNESS DETECTOR REPORT
+A. Strong Topics: Dry running logic (Q5), Basic Error Prediction (Q6, Q10), Positional Mapping (Q2).
+
+B. Weak Topics: Argument Ordering Rules (Q1, Q3), Data Structures (*args as Tuples, **kwargs as Dictionaries), List Unpacking (Q7).
+
+C. Dangerous Misconceptions:
+
+Default arguments ਕਿਤੇ ਵੀ ਰੱਖੇ ਜਾ ਸਕਦੇ ਨੇ (False, ਉਹ ਹਮੇਸ਼ਾ ਅਖੀਰ 'ਚ ਹੋਣੇ ਚਾਹੀਦੇ ਨੇ)।
+
+Positional argument, Keyword ਤੋਂ ਬਾਅਦ ਆ ਸਕਦਾ ਹੈ (False, ਹਮੇਸ਼ਾ ਪਹਿਲਾਂ ਆਵੇਗਾ)।
+
+E. Interview Readiness Score: 55/100 (Logic ਵਧੀਆ ਹੈ, ਪਰ Syntax Rules ਦੀ ਪਕੜ ਢਿੱਲੀ ਹੈ)।
+
+F. Estimated Python Skill Level: Solid Beginner.
+
+==================================================
+
+PHASE 5: REVISION SHEET (Ultra-Short)
+Function Arguments - Golden Rules 🥇
+
+Rule 1 (The VIP Rule): Positional Arguments ਹਮੇਸ਼ਾ Keyword Arguments ਤੋਂ ਪਹਿਲਾਂ ਆਉਣਗੇ। (ਪਹਿਲਾਂ ਬਿਨਾਂ ਨਾਮ ਵਾਲੇ, ਫਿਰ ਨਾਮ ਵਾਲੇ)।
+
+Rule 2 (The Default Rule): ਫੰਕਸ਼ਨ ਬਣਾਉਣ ਵੇਲੇ Default Arguments (ਜਿਵੇਂ age=18) ਹਮੇਸ਼ਾ ਨਾਨ-ਡਿਫੌਲਟ ਤੋਂ ਬਾਅਦ/ਅਖੀਰ ਵਿੱਚ ਲਿਖੇ ਜਾਣਗੇ।
+
+*args ਦਾ ਰਾਜ਼: ਇਹ ਸਾਰੀਆਂ ਵਾਧੂ positional ਵੈਲਯੂਜ਼ ਦਾ Tuple () ਬਣਾਉਂਦਾ ਹੈ। ਇਹ ਬਦਲਿਆ ਨਹੀਂ ਜਾ ਸਕਦਾ (Immutable)।
+
+**kwargs ਦਾ ਰਾਜ਼: ਇਹ ਸਾਰੀਆਂ ਵਾਧੂ keyword ਵੈਲਯੂਜ਼ (key=value) ਦੀ Dictionary {} ਬਣਾਉਂਦਾ ਹੈ।
+
+The Unpacking Trick: ਜੇ ਤੇਰੇ ਕੋਲ ਪਹਿਲਾਂ ਹੀ ਇੱਕ ਲਿਸਟ [1, 2, 3] ਹੈ ਅਤੇ ਤੂੰ ਉਸਨੂੰ *args ਵਾਲੇ ਫੰਕਸ਼ਨ ਵਿੱਚ ਭੇਜਣਾ ਹੈ, ਤਾਂ ਕਾਲ ਕਰਨ ਵੇਲੇ ਵੀ ਤਾਰਾ * ਲਗਾਉਣਾ ਪੈਂਦਾ ਹੈ: my_func(*my_list)।
+
+==================================================
+
+PHASE 6: FUTURE GROWTH
+1. Mini Coding Challenges (ਆਪਣੇ ਲੈਪਟਾਪ 'ਤੇ ਟਰਾਈ ਕਰੀਂ):
+
+ਇੱਕ ਫੰਕਸ਼ਨ ਬਣਾ def make_pizza(*toppings): ਜੋ ਪ੍ਰਿੰਟ ਕਰੇ "Making pizza with:" ਅਤੇ ਫਿਰ ਲੂਪ (loop) ਲਗਾ ਕੇ ਸਾਰੀਆਂ toppings ਪ੍ਰਿੰਟ ਕਰੇ।
+
+ਇੱਕ ਫੰਕਸ਼ਨ ਬਣਾ def employee_card(name, department="IT"): ਜਿਸ ਵਿੱਚ department ਦੀ default ਵੈਲਯੂ "IT" ਹੋਵੇ।
+
+2. Real-World Applications:
+
+*args ਦੀ ਵਰਤੋਂ: Calculator ਬਣਾਉਣ ਲਈ (ਜਿੱਥੇ ਯੂਜ਼ਰ ਜਿੰਨੇ ਮਰਜ਼ੀ ਨੰਬਰ ਪਾ ਕੇ Add ਕਰ ਸਕੇ)।
+
+**kwargs ਦੀ ਵਰਤੋਂ: Database ਵਿੱਚ ਯੂਜ਼ਰ ਦਾ ਡਾਟਾ ਸੇਵ ਕਰਨ ਲਈ (ਜਿੱਥੇ ਕਿਸੇ ਯੂਜ਼ਰ ਕੋਲ ਸਿਰਫ email ਹੈ, ਕਿਸੇ ਕੋਲ email+phone ਦੋਵੇਂ ਨੇ)।
+
+3. Interview Challenge:
+ਫੰਕਸ਼ਨ ਡਿਫਾਈਨ ਕਰਨ ਦਾ ਬਿਲਕੁਲ ਸਹੀ ਆਰਡਰ (Order) ਕੀ ਹੁੰਦਾ ਹੈ?
+Hint: Positional, *args, Default, **kwargs ਨੂੰ ਸਹੀ ਕ੍ਰਮ (Sequence) ਵਿੱਚ ਲਗਾਉਣਾ ਸਿੱਖੋ।
