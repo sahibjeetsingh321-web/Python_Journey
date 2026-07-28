@@ -91,3 +91,5 @@ def count_items(*items):
 
 clay_products = ["Clay Pot", "Kulhad", "Diya", "Handmade Plate"]
 count_items(*clay_products)
+# Je apa  function nu call karan wale koi vi argument nahi pass karde kta ZeroDivisionError aunda hai. 
+
